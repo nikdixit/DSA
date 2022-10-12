@@ -22,7 +22,7 @@ int main(){
             ptr[i]=i+1;
         }
     }
-    Sleep(1000 * 30);
+    // Sleep(1000 * 30);
 
     // printf("Enter the elemnts of array: ");
     // for(int i=0;i<n;i++){

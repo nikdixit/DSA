@@ -13,11 +13,7 @@ int main(){
         printf("Memory not allocated.\n");
     }else{
         printf("Memory succesfully allocated. \n");
-
-        for(i=0;i<n;i++){
-            ptr[i]=i+1;
-        }
-
+        
         printf("Enter the elements of array: ");
         for(int i=0;i<n;i++){
             scanf("%d",&ptr[i]);

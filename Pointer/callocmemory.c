@@ -15,9 +15,9 @@ int main(){
     }else{
         printf("Memory is allocated. \n");
 
-        for(i=0;i<n;i++){
-            ptr[i]=i+1;
-        }
+        // for(i=0;i<n;i++){
+        //     ptr[i]=i+1;
+        // }
     }
 
     printf("Enter the elemnts of array: ");
