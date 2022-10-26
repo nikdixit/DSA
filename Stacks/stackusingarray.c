@@ -43,7 +43,7 @@ void push(int x){
    else{
       top++;
       stack[top] = x;
-      printf("\nInsertion success!!!\n");;
+      printf("\nInsertion successfull!!!\n");
         }
     }
 
