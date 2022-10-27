@@ -38,12 +38,12 @@ void main(){
 
 
 void push(int x){
-   if(top == size-1)
-      printf("\nStack is Full!!! Insertion is not possible!!!");
-   else{
-      top++;
-      stack[top] = x;
-      printf("\nInsertion successfull!!!\n");
+    if(top == size-1)
+        printf("\nStack is Full!!! Insertion is not possible!!!");
+    else{
+        top++;
+        stack[top] = x;
+        printf("\nInsertion successfull!!!\n");
         }
     }
 
