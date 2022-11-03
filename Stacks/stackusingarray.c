@@ -29,12 +29,44 @@ void main(){
         case 4: display();
             break;
         case 5: exit(0);
-            break;             
+            break;
         default: printf("Invalid choice\n");
             break;
         }
     }
 }
+
+void length() {
+    printf("Length of stack is %d",top+1);
+}
+
+void change(int pos, int val) {
+    stack[pos] = val;
+    printf("Value changed at position %d",pos);
+}
+
+void push_and_pop(int val) {
+    // Push the val into the stack and return a popped element from the stack
+    push(val);
+    pop();
+}
+
+
+void push_multiple(int val[], int n) {
+    // Push multiple values into the stack
+    for(int i=0;i<n;i++) {
+        push(val[i]);
+    }
+}
+
+void pop_multiple(int n) {
+    // Pop multiple values from the stack
+    for(int i=0;i<n;i++) {
+        pop();
+    }
+}
+
+
 
 
 void push(int x){
