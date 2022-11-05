@@ -1,13 +1,18 @@
 #include <stdio.h>
-#define size 10
-int stack[size];
+#include <stdlib.h>
+// #define size 10
+int *stack;
 int top=-1;
+int size;
 void push();
 void pop();
 void peek();
 void display();
 
 void main(){
+    printf("Enter the size of the stack: ");
+    scanf("%d",&size);
+    stack = (int *) malloc(sizeof(int)*size);
     int ch;
     while(ch!=5){
         printf("\nOperations you can perform: \n\t 1.Push \n\t 2.Pop \n\t 3.Peek/Top \n\t 4.Display \n\t 5.Exit\n");

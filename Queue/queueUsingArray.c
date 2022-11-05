@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 //allocate memory for the queue dymanically
-// int *queue;
-// int front=-1,rear=-1;
-// int size;
+int *queue;
+int front=-1,rear=-1;
+int size;
 
-#define size 10
-int queue[size];
-int front=-1;
-int rear=-1;
+// #define size 10
+// int queue[size];
+// int front=-1;
+// int rear=-1;
 
 void enqueue(int x){
     if(rear==size-1){
@@ -38,8 +38,6 @@ void dequeue(){
     }
 }
 
-
-
 void dislay(){
     if(front==-1 && rear==-1){
         printf("Queue is empty\n");
@@ -62,6 +60,9 @@ void peek(){
 }
 
 int main(){
+    printf("Enter the size of the queue: ");
+    scanf("%d",&size);
+    queue=(int *)malloc(sizeof(int)*size);
     int choice;
 
     while(choice!=5){
