@@ -17,9 +17,9 @@ struct node *create(){
         return 0;
     }
     newnode->data=x;
-    printf("Enter left child of %d",x);
+    printf("Enter left child of %d\n",x);
     newnode->left=create();
-    printf("Enter right child of %d",x);
+    printf("Enter right child of %d\n",x);
     newnode->right=create();
     return newnode;
 }
